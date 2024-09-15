@@ -3,9 +3,11 @@ import styles from './BotaoCategoria.module.css';
 
 export default function BotaoCategoria(props) {
   return (
-    <button>
-      <Image src={props.imagem} alt={"Categoria " + props.texto} />
-      <p>{props.nome}</p>
-    </button>
+    <div>
+      <button className={styles.botao}>
+        <Image src={props.imagem} alt={"Categoria " + props.texto} />
+        <p>{props.nome}</p>
+      </button>
+    </div>
   );
 }

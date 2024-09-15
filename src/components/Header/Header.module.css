@@ -1,4 +1,32 @@
 .container {
   display: flex;
-  
+  justify-content: center;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1024px;
+  height: 510px;
+  background-image: url("../../../public/assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.banner div {
+  width: 38vw;
+  text-align: center;
+}
+.banner div h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #FF0, 0 -10px 20px #FF8000, 0 -18px 40px #F00;
+  color: #FFF;
+}
+.banner div p {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 31px;
+  color: #DAA520;
 }
