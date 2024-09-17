@@ -1,9 +1,18 @@
+import Image from 'next/image';
+import Lupa from '../../../public/assets/lupa.png';
 import styles from './CamposDeBusca.module.css';
 
-export default function CamposDeBusca(options) {
+export default function CamposDeBusca(props) {
   return (
-    <div>
-      
+    <div className={styles.busca}>
+      <Image src={Lupa} />
+      <input
+        type="text"
+        value={''}
+        onChange={(event) => event.target.value}
+        placeholder='Pesquise aqui um dos pratos do nosso cardápio'
+        
+      />
     </div>
   );
 }

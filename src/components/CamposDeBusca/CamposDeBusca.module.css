@@ -1,0 +1,25 @@
+.busca {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  max-width: 1024px;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid #595555;
+  border-radius: 18px;
+  background: #e8e5e5;
+}
+.busca input {
+  width: 97%;
+  height: 4vh;
+  border: none;
+  background: #e8e5e5;
+}
+.busca input:focus-visible {
+  outline: none;
+}
+.busca img {
+  width: 20px;
+  height: 20px;
+}

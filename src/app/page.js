@@ -6,6 +6,7 @@ import { imagens } from '@/data/dataColecaoImagens';
 
 import Hearder from '@/components/Header';
 import BotaoCategoria from '@/components/BotaoCategoria';
+import CamposDeBusca from '@/components/CamposDeBusca';
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
               />
             ))
           }
+          <CamposDeBusca />
         </section>
       </main>
     </div>
