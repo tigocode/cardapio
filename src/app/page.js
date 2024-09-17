@@ -7,6 +7,8 @@ import { imagens } from '@/data/dataColecaoImagens';
 import Hearder from '@/components/Header';
 import BotaoCategoria from '@/components/BotaoCategoria';
 import CamposDeBusca from '@/components/CamposDeBusca';
+import Card from '@/components/Card';
+
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -26,6 +28,20 @@ export default function Home() {
             ))
           }
           <CamposDeBusca />
+        </section>
+        <section>
+          {
+            produtos.map((produto) => (
+              <Card
+                key={produto.id}
+                imagem={produto.imagem}
+                nome={produto.nome}
+                categoria={produto.categoria}
+                descricao={produto.descricao}
+                preco={produto.preco}           
+              />
+            ))
+          }
         </section>
       </main>
     </div>

@@ -10,8 +10,7 @@ export default function CamposDeBusca(props) {
         type="text"
         value={''}
         onChange={(event) => event.target.value}
-        placeholder='Pesquise aqui um dos pratos do nosso cardápio'
-        
+        placeholder='Pesquise aqui um dos pratos do nosso cardápio'        
       />
     </div>
   );
