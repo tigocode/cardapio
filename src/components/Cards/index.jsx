@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from './Cards.module.css';
 
-export default function Card(props) {
+export default function Cards(props) {
   return (
-    <div>
+    <div className={styles.container}>
       <Image src={props.imagem} alt={"Imagem da" + props.nome} />
       <h3>{props.nome}</h3>
       <small>{props.categoria}</small>

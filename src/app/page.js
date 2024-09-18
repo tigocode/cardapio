@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { produtos } from '@/data/dataProdutos';
 import { imagens } from '@/data/dataColecaoImagens';
 
+import Cards from '@/components/Cards';
 import Hearder from '@/components/Header';
 import BotaoCategoria from '@/components/BotaoCategoria';
 import CamposDeBusca from '@/components/CamposDeBusca';
-import Card from '@/components/Card';
+
 
 import styles from "./page.module.css";
 
@@ -32,7 +33,7 @@ export default function Home() {
         <section>
           {
             produtos.map((produto) => (
-              <Card
+              <Cards
                 key={produto.id}
                 imagem={produto.imagem}
                 nome={produto.nome}
