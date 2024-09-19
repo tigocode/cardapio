@@ -30,7 +30,10 @@ export default function Home() {
           }
           <CamposDeBusca />
         </section>
-        <section>
+        <section className={styles.produtos}>
+          <div className={styles.title}>
+            <h2>Cardápio</h2>
+          </div>
           {
             produtos.map((produto) => (
               <Cards
@@ -39,7 +42,7 @@ export default function Home() {
                 nome={produto.nome}
                 categoria={produto.categoria}
                 descricao={produto.descricao}
-                preco={produto.preco}           
+                preco={produto.preco}
               />
             ))
           }

@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 
@@ -16,4 +18,20 @@
   text-align: center;
 
   padding: 20px 0px;
+}
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1024px;
+  width: 100%;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
 }
