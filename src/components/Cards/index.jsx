@@ -7,11 +7,11 @@ export default function Cards(props) {
       <div className={styles.image}>
         <Image src={props.imagem} alt={props.nome + " imagem"} />
       </div>
-      <div>
+      <div className={styles.informacoes}>
         <h3>{props.nome}</h3>
         <small>{props.categoria}</small>
         <p>{props.descricao}</p>
-        <span>{props.preco}</span>
+        <span>R$ {props.preco}</span>
       </div>
     </div>
   );

@@ -29,9 +29,15 @@
 
   max-width: 1024px;
   width: 100%;
+  padding: 20px;
 }
 .title {
   width: 100%;
-  text-align: center;
-  padding-top: 15px;
+  text-align: center;  
+}
+.title h2 {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  color: #daa520;
 }
