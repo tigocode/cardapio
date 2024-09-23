@@ -1,8 +1,8 @@
 'use client';
-import Image from 'next/image';
+import { useState } from 'react';
 
-import { produtos } from '@/data/dataProdutos';
 import { imagens } from '@/data/dataColecaoImagens';
+import { filtarProdutos, produtosEntradas, buscarTexto } from '@/service';
 
 import Cards from '@/components/Cards';
 import Hearder from '@/components/Header';
@@ -13,6 +13,20 @@ import CamposDeBusca from '@/components/CamposDeBusca';
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [listaProdutos, setListaProdutos] = useState(produtosEntradas);
+  const [textBusca, setTextBusca] = useState("");
+  const [botaoClicado, setbotaoClicado] = useState("Entradas");
+
+  const handelFilterCategoria = (categoria) => {
+    setListaProdutos(filtarProdutos(categoria));
+    setbotaoClicado(categoria);
+  }
+  const handelBuscarProduto = (textoDigitado) => {
+    setTextBusca(textoDigitado);
+    setListaProdutos(buscarTexto(textoDigitado));
+    setbotaoClicado("");
+  }
+
   return (
     <div>
       <Hearder />
@@ -25,17 +39,22 @@ export default function Home() {
                 imagem={data.imagem}
                 texto={data.nome}
                 nome={data.nome}
+                acao_click={handelFilterCategoria}
+                estilo={botaoClicado}
               />
             ))
           }
-          <CamposDeBusca />
+          <CamposDeBusca
+            busca={handelBuscarProduto}
+            valor={textBusca}
+          />
         </section>
         <section className={styles.produtos}>
           <div className={styles.title}>
             <h2>Cardápio</h2>
           </div>
           {
-            produtos.map((produto) => (
+            listaProdutos.map((produto) => (
               <Cards
                 key={produto.id}
                 imagem={produto.imagem}

@@ -8,8 +8,8 @@ export default function CamposDeBusca(props) {
       <Image src={Lupa} />
       <input
         type="text"
-        value={''}
-        onChange={(event) => event.target.value}
+        value={props.valor}
+        onChange={(event) => props.busca(event.target.value)}
         placeholder='Pesquise aqui um dos pratos do nosso cardápio'        
       />
     </div>

@@ -1,23 +1,26 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  flex-grow: 1;
+  width: 250px;
   overflow: hidden;
 
-  border: 1px solid #daa520;
+  border: 3px solid #daa520;
   border-radius: 10px;
 }
 .image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 220px;
+  flex-grow: 1;
+  height: 250px;
 }
 .image img {
-  width: 310px;
+  width: 100%;
   height: 100%;
 
-  border-radius: 28px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .informacoes {
   display: flex;

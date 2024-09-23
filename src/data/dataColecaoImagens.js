@@ -1,26 +1,26 @@
 import bebidas from '../../public/assets/bebidas.png';
-import carne from '../../public/assets/carne.png';
-import entrada from '../../public/assets/entrada.png';
+import carnes from '../../public/assets/carne.png';
+import entradas from '../../public/assets/entrada.png';
 import lupa from '../../public/assets/lupa.png';
-import massa from '../../public/assets/massa.png';
-import salada from '../../public/assets/salada.png';
-import sobremesa from '../../public/assets/sobremesa.png';
+import massas from '../../public/assets/massa.png';
+import saladas from '../../public/assets/salada.png';
+import sobremesas from '../../public/assets/sobremesa.png';
 
 export const imagens = [
   {
     id: 1,
-    nome: "Entrada",
-    imagem: entrada
+    nome: "Entradas",
+    imagem: entradas
   },
   {
     id: 2,
-    nome: "Massa",
-    imagem: massa
+    nome: "Massas",
+    imagem: massas
   },
   {
     id: 3,
-    nome: "Carne",
-    imagem: carne
+    nome: "Carnes",
+    imagem: carnes
   },
   {
     id: 4,
@@ -29,12 +29,12 @@ export const imagens = [
   },    
   {
     id: 5,
-    nome: "Salada",
-    imagem: salada
+    nome: "Saladas",
+    imagem: saladas
   },
   {
     id: 6,
-    nome: "Sobremesa",
-    imagem: sobremesa
+    nome: "Sobremesas",
+    imagem: sobremesas
   },
 ]
