@@ -18,12 +18,13 @@ export default function Home() {
   const [botaoClicado, setbotaoClicado] = useState("Entradas");
 
   const handelFilterCategoria = (categoria) => {
+    setTextBusca("");
     setListaProdutos(filtarProdutos(categoria));
     setbotaoClicado(categoria);
   }
   const handelBuscarProduto = (textoDigitado) => {
     setTextBusca(textoDigitado);
-    setListaProdutos(buscarTexto(textoDigitado));
+    textoDigitado.length >= 3 && setListaProdutos(buscarTexto(textoDigitado));
     setbotaoClicado("");
   }
 
