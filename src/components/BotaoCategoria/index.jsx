@@ -3,7 +3,7 @@ import styles from './BotaoCategoria.module.css';
 
 export default function BotaoCategoria(props) {
   return (
-    <div>
+    <div className={styles.container}>
       <button /* className={styles.botao}  */
       className={props.estilo === props.nome ? `${styles.botao} ${styles.btnAtivo}` : `${styles.botao}`}
       onClick={() => props.acao_click(props.nome)}>

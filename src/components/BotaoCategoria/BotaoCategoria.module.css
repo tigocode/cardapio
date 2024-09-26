@@ -1,7 +1,12 @@
+.container {
+  display: flex;
+  flex-grow: 1;
+}
 .botao {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   gap: 10px;
   width: 150px;
   height: 45px;

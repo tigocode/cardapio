@@ -10,21 +10,22 @@
 .categoria {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 0;
   gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 1024px;
   width: 100%;
   text-align: center;
 
-  padding: 20px 0px;
+  padding: 20px 10px;
 }
 .produtos {
   display: flex;
   flex-wrap: wrap;
 
   gap: 30px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
   max-width: 1024px;
@@ -33,7 +34,7 @@
 }
 .title {
   width: 100%;
-  text-align: center;  
+  text-align: center;
 }
 .title h2 {
   font-family: 'Dancing Script', sans-serif;
