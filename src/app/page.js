@@ -62,7 +62,7 @@ export default function Home() {
                 nome={produto.nome}
                 categoria={produto.categoria}
                 descricao={produto.descricao}
-                preco={produto.preco}
+                preco={produto.preco.toFixed(2).replace(".", ",")}
               />
             ))
           }

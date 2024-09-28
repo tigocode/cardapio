@@ -23,3 +23,11 @@
   width: 20px;
   height: 20px;
 }
+@media (min-width: 375px) and (max-width: 768px) {
+  .busca {
+    padding: 5px;
+  }
+  .busca input {    
+    height: 3vh;
+  }
+}
