@@ -5,7 +5,7 @@ A proposta desse projeto é criar um cardapio de restaurante em React, para colo
 ### Acesse o Link: https://cardapio-kappa-lovat.vercel.app/
 
 <div >
-  <img height="280em" src="./public/Capa.png" />
+  <img height="280em" src="./public/assets/Capa.png" />
 </div>
 
 ## Sobre:
